@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/theme_entry"
+        android:entryValues="@array/theme_value"
+        android:title="Theme"
+        android:summary="%s"
+        android:key="key_pref_theme"/>
+
+    <Preference
+        android:title="Open nested preference 1"
+        android:key="key_pref_one"/>
+
+    <Preference
+        android:title="Open nested preference 2"
+        android:key="key_pref_two"/>
+
+    <CheckBoxPreference
+        android:key="key_check"
+        android:title="Check"
+        android:summary="Example Check"/>
+</PreferenceScreen>
